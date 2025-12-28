@@ -21,7 +21,7 @@ const Header =({setHeaderSizeFixed}:HeaderType)=>{
   }
 
     return (
-        <header className="fixed w-full bg-white min-2xl:container ">
+        <header className="fixed z-100 w-full bg-white min-2xl:container ">
         
             <div ref={outOffer} className=" w-full  h-[56px]  bg-[url(./FarahDarsOffer.svg)] bg-cover bg-center">
              <button onClick={outOfferHandler}  className="w-[25px] h-[25px] m-2"><RiCloseLargeFill className="text-white w-full h-full"/></button>    

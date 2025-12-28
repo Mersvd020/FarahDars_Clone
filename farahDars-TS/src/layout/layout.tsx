@@ -7,7 +7,7 @@ import {useState} from "react"
 const layOut = ()=>{
 
    const[HeaderSizeFixed,setHeaderSizeFixed] = useState<boolean>(false)
-    console.log(HeaderSizeFixed)
+    // console.log(HeaderSizeFixed)
 
     return(
        <div dir="rtl" className="min-h-screen flex flex-col ">

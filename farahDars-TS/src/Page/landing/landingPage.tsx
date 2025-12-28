@@ -13,6 +13,9 @@ const landingPage = ()=>{
            <div className="w-[80%]">
           <SliderWithCat/>
            </div>
+           <div className="w-[80%]">
+          <SliderWithCat/>
+           </div>
 
           </div>
         </div>
