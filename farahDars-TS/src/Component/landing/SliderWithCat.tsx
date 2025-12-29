@@ -137,7 +137,7 @@ const SliderWithCat = ({ courseList }: courseListProps) => {
           ))}
           
           <SwiperSlide className="h-auto">
-            <div className="border border-[gray]/50 bg-[gray]/20 w-full h-full min-h-[300px] flex flex-col rounded-[12px] items-center justify-center">
+            <div className="border border-[gray]/50 bg-[gray]/20 w-[200px] h-[350px] flex flex-col rounded-[12px] items-center justify-center">
               مشاهده همه
             </div>
           </SwiperSlide>
