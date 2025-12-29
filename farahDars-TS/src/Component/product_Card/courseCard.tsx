@@ -15,9 +15,9 @@ export type courseList = {
 const courseCard = ({id,title,teacherName,courseTime,price,disCount,ImageAddress}:courseList)=>{
     
  return (
-     <div key={id} className=" hover:shadow-xl/10 hover:cursor-pointer hover:bg-[gray]/2 outline-1 outline-[gray]/50  w-[9%] h-full flex flex-col rounded-[12px] items-center
+     <div key={id} className=" hover:shadow-lg hover:cursor-pointer hover:bg-[gray]/2 outline-1 outline-[gray]/50  w-[286px] h-[350px] rounded-[12px]
        flex flex-col items-center ">
-        <picture className="relative   w-full h-[50%] p-2 ">
+        <picture className="relative  w-full h-[50%] p-2 ">
           <img className=" rounded-[12px]" src={ImageAddress}/>
           <button 
            data-tooltip-id="favorite-tooltip"
