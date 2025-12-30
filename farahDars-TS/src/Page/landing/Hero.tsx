@@ -5,12 +5,12 @@ const Hero = ()=>{
     return(
         <div className=" w-[80%] h-[458.5px] flex flex-row justify-between  ">
            
-            <div className="w-[45%] h-full flex flex-col justify-end  font-medium text-[gray]/70">
+            <div className="w-[45%] h-full flex flex-col justify-end   text-[gray]/100">
 
-             <article className="max-2xl:h-[55%] max-md:h-[45%] h-[50%] flex flex-col gap-5">
-               <p className="max-lg:text-[35px] max-md:text-[25px] text-[38px]  text-[black] font-bold">با هزاران <span className="text-[blue]/80">آموزش</span>  کاربردی فرادرس،</p>
-               <p className="max-lg:text-[25px] max-md:text-[20px] text-[30px] whitespace-nowrap">همین امروز شروع کن،</p>
-               <p className="max-lg:text-[20px] max-md:text-[15px] text-[25px] whitespace-nowrap ">یاد بگیر و آینده رو بساز.</p>
+             <article className="max-2xl:h-[55%] max-md:h-[45%] h-[40%] flex flex-col gap-3">
+               <p className="max-lg:text-[35px] max-md:text-[25px] text-[38px]  text-[black] font-bold ">با هزاران <span className="text-[blue]/80">آموزش</span>  کاربردی فرادرس،</p>
+               <p className="max-lg:text-[25px] max-md:text-[20px] text-[30px] whitespace-nowrap ">همین امروز شروع کن،</p>
+               <p className="max-lg:text-[20px] max-md:text-[15px] text-[25px] whitespace-nowrap">یاد بگیر و آینده رو بساز.</p>
              </article>
 
              <div className="h-[35%] w-full items-center"> 

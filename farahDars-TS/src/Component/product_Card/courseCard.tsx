@@ -15,9 +15,9 @@ export type courseList = {
 const courseCard = ({id,title,teacherName,courseTime,price,disCount,ImageAddress}:courseList)=>{
     
  return (
-     <div key={id} className=" hover:shadow-lg hover:cursor-pointer hover:bg-[gray]/2 outline-1 outline-[gray]/50  w-[286px] h-[350px] rounded-[12px]
+     <div key={id} className=" hover:shadow-lg hover:cursor-pointer hover:bg-[gray]/2 outline-1 outline-[gray]/50  w-[276px] h-[340px] rounded-[8px]
        flex flex-col items-center ">
-        <picture className="relative  w-full h-[50%] p-2 ">
+        <picture className="relative  w-full h-[50%] p-3 ">
           <img className=" rounded-[12px]" src={ImageAddress}/>
           <button 
            data-tooltip-id="favorite-tooltip"
@@ -53,7 +53,7 @@ const courseCard = ({id,title,teacherName,courseTime,price,disCount,ImageAddress
               <span className="text-[gray] text-[13px]">تومان</span>
             </section>
 
-            <button className="w-[40px] h-[30px] bg-[red] text-[white] text-[13px] rounded-[7px]">{disCount <= 80 ? disCount.toLocaleString("fa") + "%" : "شگفتی"}</button>
+            <button className="p-1 bg-[red] text-[white] font-medium text-[13px] rounded-[7px]">{disCount <= 80 ? disCount.toLocaleString("fa") + "%" : "شگفتی"}</button>
         </div>
         
      </div>

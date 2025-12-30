@@ -20,7 +20,7 @@ const LandingReport = ()=>{
          rounded-[25px] shadow-blue-300 shadow-sm
          flex flex-row items-center p-2">
            {report.map((rep)=>(
-             <div key={rep.id} className="w-1/4 h-full flex flex-row items-center">
+             <div key={rep.id} className="w-1/4  h-full flex flex-row items-center justify-center">
             <PiStudentDuotone className="w-[40px] h-[40px] "/>
             <span className="text-[gray] text-xl">{rep.num.toLocaleString('fa-IR')}+دانشجو</span>
             </div>

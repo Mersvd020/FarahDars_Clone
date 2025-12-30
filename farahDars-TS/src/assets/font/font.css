@@ -1,0 +1,37 @@
+
+/* this font come from npm install */
+@font-face { 
+  font-family: 'vazirmatn';
+  src: url('./assets/fonts/vazirmatn.woff2') format('woff2'),
+       url('./assets/fonts/vazirmatn.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* this font is local,in folder fontCollection */
+@font-face {
+  font-family: "Shabnam";
+  src: url('./FontCollection/shabnam-font-v2.4.0/Shabnam-Light.ttf');
+  
+}
+
+@font-face {
+  font-family: "Vazir";
+  src: url('./FontCollection/vazir-font-v18.0.0/Vazir-Light.ttf');
+  
+}
+
+@font-face {
+  font-family: "Yekan";
+  src: url('./FontCollection/yekan-font/yekan-regular.ttf');
+  
+}
+
+
+
+
+
+body{
+    font-family:"Shabnam";
+    
+}

@@ -92,11 +92,11 @@ const SliderWithCat = ({ courseList }: courseListProps) => {
       </div>
 
       {/*silder*/}   
-      <div className="Slider overflow-hidden w-full h-[75%] py-4">
+      <div className="Slider overflow-hidden w-full h-[75%] py-6">
         <Swiper
           onSwiper={(swiper) => { swiperRef.current = swiper; }}
           slidesPerView={4}
-          spaceBetween={20}
+          spaceBetween={10}
           grabCursor={true}
           threshold={10}
           resistanceRatio={0.85}

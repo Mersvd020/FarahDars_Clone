@@ -5,6 +5,8 @@ import Search from "../../Component/other/search"
 import {useRef} from "react"
 import { TfiShoppingCart} from "react-icons/tfi";
 import { RiCloseLargeFill } from "react-icons/ri";
+import {Button,IconButton} from "@mui/material";
+
 
 type HeaderType = {
     setHeaderSizeFixed:React.Dispatch<React.SetStateAction<boolean>>
@@ -21,7 +23,7 @@ const Header =({setHeaderSizeFixed}:HeaderType)=>{
   }
 
     return (
-        <header className="fixed z-100 w-full bg-white min-2xl:container ">
+        <header className="fixed z-100 w-full bg-white min-2xl:container shadow-sm ">
         
             <div ref={outOffer} className=" w-full  h-[56px]  bg-[url(./FarahDarsOffer.svg)] bg-cover bg-center">
              <button onClick={outOfferHandler}  className="w-[25px] h-[25px] m-2"><RiCloseLargeFill className="text-white w-full h-full"/></button>    
@@ -47,16 +49,26 @@ const Header =({setHeaderSizeFixed}:HeaderType)=>{
               {/*cart&register*/}
               <div className="h-full min-lg:w-[15%] min-md:w-[20%] flex flex-row items-center justify-center  gap-2  ">
                  
-                   <button className="w-[100px] h-[35px] border text-[13px] font-medium
+                   {/* <button className="w-[100px] h-[35px] border text-[13px] font-medium
                     border-purple-600 text-purple-600 rounded-lg">
                       ورود / عضویت
-                    </button>
+                    </button> */}
+                    <Button 
+                     variant="outlined"> 
+                     <span className="font-bold text-[12px]">
+                      ورود / عضویت
+                      </span>
+                      </Button>
                     
                     <div className="h-8 w-[1px] bg-gray-300"></div>
                     
-                    <button className="h-[25px] w-[25px]">
+                    {/* <button className="h-[25px] w-[25px]">
                       <TfiShoppingCart/>
-                    </button>
+                    </button> */}
+
+                    <IconButton color="primary"  aria-label="add to shopping cart">
+                        <TfiShoppingCart className="text-[black] p-1"/>
+                    </IconButton>
                
               </div>
 
