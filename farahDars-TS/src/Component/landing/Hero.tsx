@@ -1,10 +1,11 @@
-import Search from "../../Component/other/search"
+import Search from "../other/search"
 
 
 const Hero = ()=>{
     return(
-        <div className=" w-[80%] h-[458.5px] flex flex-row justify-between  ">
-           
+        <div className=" w-full h-[458.5px] flex flex-row justify-between 
+        ">
+   
             <div className="w-[45%] h-full flex flex-col justify-end   text-[gray]/100">
 
              <article className="max-2xl:h-[55%] max-md:h-[45%] h-[40%] flex flex-col gap-3">

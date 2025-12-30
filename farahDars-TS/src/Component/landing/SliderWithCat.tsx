@@ -96,7 +96,7 @@ const SliderWithCat = ({ courseList }: courseListProps) => {
         <Swiper
           onSwiper={(swiper) => { swiperRef.current = swiper; }}
           slidesPerView={4}
-          spaceBetween={10}
+          spaceBetween={20}
           grabCursor={true}
           threshold={10}
           resistanceRatio={0.85}
@@ -109,15 +109,15 @@ const SliderWithCat = ({ courseList }: courseListProps) => {
             },
             640: {
               slidesPerView: 2,
-              spaceBetween: 15
+              spaceBetween: 10
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 20
+              spaceBetween: 10
             },
             1280: {
               slidesPerView: 4,
-              spaceBetween: 20
+              spaceBetween: 10
             }
           }}
           className="h-full"

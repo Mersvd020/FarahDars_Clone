@@ -16,7 +16,7 @@ const LandingReport = ()=>{
    ]
 
     return(
-       <div className=" w-[80%] h-[104px] font-bold mb-20
+       <div className=" w-full h-[104px] font-bold mb-20
          rounded-[25px] shadow-blue-300 shadow-sm
          flex flex-row items-center p-2">
            {report.map((rep)=>(

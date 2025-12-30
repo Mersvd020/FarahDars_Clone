@@ -1,6 +1,9 @@
-import Hero from "./Hero"
-import LandingReport from "./LandingReport"
+import Hero from "../../Component/landing/Hero"
+import LandingReport from "../../Component/landing/LandingReport"
+import Board from "../../Component/landing/splitHero"
 import SliderWithCat from "../../Component/landing/SliderWithCat"
+import Leaderboard from "../../Component/landing/leaderBoard"
+
 
 import type { courseList } from "../../Component/product_Card/courseCard";
 export type courseDataList = courseList &{
@@ -25,26 +28,57 @@ const landingPage = ()=>{
      ]
 
     return (
-        <div className="  w-full ">
+        <div className="  w-full">
           
-          {/* skyblue to white background */}
-          <div className="absolute -z-1 w-full  h-[458.5px]
+          <div className="flex flex-col place-items-center gap-5 min-2xl:container min-2xl:mx-auto ">
+          <section className="w-full flex flex-col items-center 
+           ">
+           {/* skyblue to white background */} 
+            <div className="absolute  -z-1 w-full  h-[458.5px]
            bg-gradient-to-b from-sky-200 via-gray-200 to-white">
           </div>
-           
 
-          <div className=" min-2xl:container min-2xl:mx-auto flex flex-col place-items-center gap-5 ">
-          <section className="w-full flex flex-col items-center
-           ">
             <Hero/>
+
           </section>
+
           <LandingReport/>
-           <div className="w-[80%]">
+
+           
           <SliderWithCat courseList={courseList}/>
-           </div>
-           <div className="w-[80%]">
+          
+
+           <section className="w-full flex flex-col items-center
+             mt-20 mb-20 ">
+            <Board 
+             title="یادگیری و"
+             titleBlue="گواهینامه"
+             context="با کسب نمره قبولی در آزمون‌ها، گواهینامه رسمی پایان دوره به دو زبان فارسی و انگلیسی به شما اعطا می‌شود. علاوه بر دانلود و ذخیره، امکان اشتراک‌گذاری مستقیم گواهینامه در لینکدین نیز فراهم است."
+             buttonTitle="آموزش های دارای گواهینامه"
+             boardCover="https://faradars.org/_next/image?url=https%3A%2F%2Ffaradars.org%2Fwp-content%2Fuploads%2F2025%2F10%2F05%2Fcertificate.svg&w=1920&q=75"
+            />
+          </section>
+
+          <section className="w-full flex flex-col items-center
+             mt-20 mb-20 ">
+            <Leaderboard/>
+          </section>
+
+
+
+           
           <SliderWithCat courseList={courseList} />
-           </div>
+          
+
+            <section className="w-full flex flex-col items-center
+             mt-20 mb-20 ">
+            <Board 
+             title="تدریس در فرادرس"
+             context="برای همکاری آموزشی، تدریس و ارایه آموزش در فرادرس و پیوستن به آن به عنوان عضو هیات علمی، به لینک زیر مراجعه کنید."
+             buttonTitle="تدریس در فرادرس"
+             boardCover="https://faradars.org/_next/image?url=https%3A%2F%2Ffaradars.org%2Fwp-content%2Fuploads%2F2025%2F05%2F06%2Fteacher.svg&w=1920&q=75"
+            />
+          </section>
 
           </div>
         </div>

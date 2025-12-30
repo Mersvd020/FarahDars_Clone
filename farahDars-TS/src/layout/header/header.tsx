@@ -1,18 +1,14 @@
-import Logo from "../../Component/landing/logo"
-import CategoryList from "./categoryList"
+import Logo from "../../Component/header/logo"
+import CategoryList from "../../Component/header/categoryList"
 import Search from "../../Component/other/search"
 
-import {useRef} from "react"
+import {useRef,useState} from "react"
 import { TfiShoppingCart} from "react-icons/tfi";
 import { RiCloseLargeFill } from "react-icons/ri";
 import {Button,IconButton} from "@mui/material";
 
 
-type HeaderType = {
-    setHeaderSizeFixed:React.Dispatch<React.SetStateAction<boolean>>
-}
-
-const Header =({setHeaderSizeFixed}:HeaderType)=>{
+const Header =()=>{
 
   const outOffer = useRef<HTMLDivElement>(null);
 
@@ -22,7 +18,11 @@ const Header =({setHeaderSizeFixed}:HeaderType)=>{
       setHeaderSizeFixed(true);
   }
 
+  const[HeaderSizeFixed,setHeaderSizeFixed] = useState<boolean>(false)
+    // console.log(HeaderSizeFixed)
+
     return (
+        <div  className={`w-full ${HeaderSizeFixed ? "h-[60px]": "h-[117px]"} flex flex-col items-center`}> 
         <header className="fixed z-100 w-full bg-white min-2xl:container shadow-sm ">
         
             <div ref={outOffer} className=" w-full  h-[56px]  bg-[url(./FarahDarsOffer.svg)] bg-cover bg-center">
@@ -49,10 +49,6 @@ const Header =({setHeaderSizeFixed}:HeaderType)=>{
               {/*cart&register*/}
               <div className="h-full min-lg:w-[15%] min-md:w-[20%] flex flex-row items-center justify-center  gap-2  ">
                  
-                   {/* <button className="w-[100px] h-[35px] border text-[13px] font-medium
-                    border-purple-600 text-purple-600 rounded-lg">
-                      ورود / عضویت
-                    </button> */}
                     <Button 
                      variant="outlined"> 
                      <span className="font-bold text-[12px]">
@@ -62,10 +58,6 @@ const Header =({setHeaderSizeFixed}:HeaderType)=>{
                     
                     <div className="h-8 w-[1px] bg-gray-300"></div>
                     
-                    {/* <button className="h-[25px] w-[25px]">
-                      <TfiShoppingCart/>
-                    </button> */}
-
                     <IconButton color="primary"  aria-label="add to shopping cart">
                         <TfiShoppingCart className="text-[black] p-1"/>
                     </IconButton>
@@ -75,6 +67,7 @@ const Header =({setHeaderSizeFixed}:HeaderType)=>{
             </nav>
 
         </header>
+     </div>   
     )
 }
 export default Header
